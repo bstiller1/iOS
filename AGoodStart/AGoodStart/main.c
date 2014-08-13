@@ -12,8 +12,10 @@ int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    printf("It was the best of times.\n");
-    printf("It was the worst of times.\n");
+    char *firstline = "It was the best of times.\n";
+    char *secondline = "It was the worst of times.\n";
+    printf(firstline);
+    printf(secondline);
     return 0;
 }
 

@@ -10,7 +10,7 @@
 
 void congradulateStudent(char *student, char *course, int numDays)
 {
-    printf("%s has done as much %s programming as I could fit into %d days. \n", student, course, numDays);
+    printf("\"%s has done as much %s programming as I could fit into %d days.\" \n", student, course, numDays);
 
 }
 
