@@ -12,10 +12,10 @@ int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    unsigned long x = 255;
-    printf("x is %lu.\n", x);
-    printf("In octal, x is %lo.\n", x);
-    printf("In hexadecimal x is %lx.\n", x);
+    
+    double y = 12345.6789;
+    printf("y is %.2f\n", y);
+    printf("Y iS %.2e\n", y);
     return 0;
 }
 
