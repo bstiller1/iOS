@@ -101,7 +101,7 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="blueButton"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchDown" id="odX-aE-hIW"/>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchDown" id="L3K-nq-kB6"/>
                                 </connections>
                             </button>
                         </subviews>
