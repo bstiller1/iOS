@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772C49D019A667E8009B7534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49CF19A667E8009B7534 /* Foundation.framework */; };
+		772C49D219A667E8009B7534 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49D119A667E8009B7534 /* CoreGraphics.framework */; };
+		772C49D419A667E8009B7534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49D319A667E8009B7534 /* UIKit.framework */; };
+		772C49DA19A667E8009B7534 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 772C49D819A667E8009B7534 /* InfoPlist.strings */; };
+		772C49DC19A667E8009B7534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772C49DB19A667E8009B7534 /* main.m */; };
+		772C49E019A667E8009B7534 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772C49DF19A667E8009B7534 /* BIDAppDelegate.m */; };
+		772C49E319A667E8009B7534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772C49E119A667E8009B7534 /* Main.storyboard */; };
+		772C49E619A667E8009B7534 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772C49E519A667E8009B7534 /* BIDViewController.m */; };
+		772C49E819A667E8009B7534 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772C49E719A667E8009B7534 /* Images.xcassets */; };
+		772C49EF19A667E8009B7534 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49EE19A667E8009B7534 /* XCTest.framework */; };
+		772C49F019A667E8009B7534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49CF19A667E8009B7534 /* Foundation.framework */; };
+		772C49F119A667E8009B7534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772C49D319A667E8009B7534 /* UIKit.framework */; };
+		772C49F919A667E8009B7534 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 772C49F719A667E8009B7534 /* InfoPlist.strings */; };
+		772C49FB19A667E8009B7534 /* AlisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 772C49FA19A667E8009B7534 /* AlisionTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		772C49F219A667E8009B7534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772C49C419A667E8009B7534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772C49CB19A667E8009B7534;
+			remoteInfo = Alision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		772C49CC19A667E8009B7534 /* Alision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		772C49CF19A667E8009B7534 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		772C49D119A667E8009B7534 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		772C49D319A667E8009B7534 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		772C49D719A667E8009B7534 /* Alision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alision-Info.plist"; sourceTree = "<group>"; };
+		772C49D919A667E8009B7534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		772C49DB19A667E8009B7534 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		772C49DD19A667E8009B7534 /* Alision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alision-Prefix.pch"; sourceTree = "<group>"; };
+		772C49DE19A667E8009B7534 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		772C49DF19A667E8009B7534 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		772C49E219A667E8009B7534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772C49E419A667E8009B7534 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		772C49E519A667E8009B7534 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		772C49E719A667E8009B7534 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		772C49ED19A667E8009B7534 /* AlisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		772C49EE19A667E8009B7534 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		772C49F619A667E8009B7534 /* AlisionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlisionTests-Info.plist"; sourceTree = "<group>"; };
+		772C49F819A667E8009B7534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		772C49FA19A667E8009B7534 /* AlisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlisionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772C49C919A667E8009B7534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49D219A667E8009B7534 /* CoreGraphics.framework in Frameworks */,
+				772C49D419A667E8009B7534 /* UIKit.framework in Frameworks */,
+				772C49D019A667E8009B7534 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772C49EA19A667E8009B7534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49EF19A667E8009B7534 /* XCTest.framework in Frameworks */,
+				772C49F119A667E8009B7534 /* UIKit.framework in Frameworks */,
+				772C49F019A667E8009B7534 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		772C49C319A667E8009B7534 = {
+			isa = PBXGroup;
+			children = (
+				772C49D519A667E8009B7534 /* Alision */,
+				772C49F419A667E8009B7534 /* AlisionTests */,
+				772C49CE19A667E8009B7534 /* Frameworks */,
+				772C49CD19A667E8009B7534 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		772C49CD19A667E8009B7534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				772C49CC19A667E8009B7534 /* Alision.app */,
+				772C49ED19A667E8009B7534 /* AlisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		772C49CE19A667E8009B7534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				772C49CF19A667E8009B7534 /* Foundation.framework */,
+				772C49D119A667E8009B7534 /* CoreGraphics.framework */,
+				772C49D319A667E8009B7534 /* UIKit.framework */,
+				772C49EE19A667E8009B7534 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		772C49D519A667E8009B7534 /* Alision */ = {
+			isa = PBXGroup;
+			children = (
+				772C49DE19A667E8009B7534 /* BIDAppDelegate.h */,
+				772C49DF19A667E8009B7534 /* BIDAppDelegate.m */,
+				772C49E119A667E8009B7534 /* Main.storyboard */,
+				772C49E419A667E8009B7534 /* BIDViewController.h */,
+				772C49E519A667E8009B7534 /* BIDViewController.m */,
+				772C49E719A667E8009B7534 /* Images.xcassets */,
+				772C49D619A667E8009B7534 /* Supporting Files */,
+			);
+			path = Alision;
+			sourceTree = "<group>";
+		};
+		772C49D619A667E8009B7534 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				772C49D719A667E8009B7534 /* Alision-Info.plist */,
+				772C49D819A667E8009B7534 /* InfoPlist.strings */,
+				772C49DB19A667E8009B7534 /* main.m */,
+				772C49DD19A667E8009B7534 /* Alision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		772C49F419A667E8009B7534 /* AlisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				772C49FA19A667E8009B7534 /* AlisionTests.m */,
+				772C49F519A667E8009B7534 /* Supporting Files */,
+			);
+			path = AlisionTests;
+			sourceTree = "<group>";
+		};
+		772C49F519A667E8009B7534 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				772C49F619A667E8009B7534 /* AlisionTests-Info.plist */,
+				772C49F719A667E8009B7534 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772C49CB19A667E8009B7534 /* Alision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772C49FE19A667E8009B7534 /* Build configuration list for PBXNativeTarget "Alision" */;
+			buildPhases = (
+				772C49C819A667E8009B7534 /* Sources */,
+				772C49C919A667E8009B7534 /* Frameworks */,
+				772C49CA19A667E8009B7534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alision;
+			productName = Alision;
+			productReference = 772C49CC19A667E8009B7534 /* Alision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		772C49EC19A667E8009B7534 /* AlisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772C4A0119A667E8009B7534 /* Build configuration list for PBXNativeTarget "AlisionTests" */;
+			buildPhases = (
+				772C49E919A667E8009B7534 /* Sources */,
+				772C49EA19A667E8009B7534 /* Frameworks */,
+				772C49EB19A667E8009B7534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772C49F319A667E8009B7534 /* PBXTargetDependency */,
+			);
+			name = AlisionTests;
+			productName = AlisionTests;
+			productReference = 772C49ED19A667E8009B7534 /* AlisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		772C49C419A667E8009B7534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = blakestiller;
+				TargetAttributes = {
+					772C49EC19A667E8009B7534 = {
+						TestTargetID = 772C49CB19A667E8009B7534;
+					};
+				};
+			};
+			buildConfigurationList = 772C49C719A667E8009B7534 /* Build configuration list for PBXProject "Alision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 772C49C319A667E8009B7534;
+			productRefGroup = 772C49CD19A667E8009B7534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				772C49CB19A667E8009B7534 /* Alision */,
+				772C49EC19A667E8009B7534 /* AlisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772C49CA19A667E8009B7534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49E819A667E8009B7534 /* Images.xcassets in Resources */,
+				772C49DA19A667E8009B7534 /* InfoPlist.strings in Resources */,
+				772C49E319A667E8009B7534 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772C49EB19A667E8009B7534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49F919A667E8009B7534 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		772C49C819A667E8009B7534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49E019A667E8009B7534 /* BIDAppDelegate.m in Sources */,
+				772C49E619A667E8009B7534 /* BIDViewController.m in Sources */,
+				772C49DC19A667E8009B7534 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772C49E919A667E8009B7534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772C49FB19A667E8009B7534 /* AlisionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		772C49F319A667E8009B7534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772C49CB19A667E8009B7534 /* Alision */;
+			targetProxy = 772C49F219A667E8009B7534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		772C49D819A667E8009B7534 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772C49D919A667E8009B7534 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		772C49E119A667E8009B7534 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772C49E219A667E8009B7534 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		772C49F719A667E8009B7534 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772C49F819A667E8009B7534 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		772C49FC19A667E8009B7534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		772C49FD19A667E8009B7534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		772C49FF19A667E8009B7534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alision/Alision-Prefix.pch";
+				INFOPLIST_FILE = "Alision/Alision-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		772C4A0019A667E8009B7534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alision/Alision-Prefix.pch";
+				INFOPLIST_FILE = "Alision/Alision-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		772C4A0219A667E8009B7534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alision.app/Alision";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alision/Alision-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AlisionTests/AlisionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		772C4A0319A667E8009B7534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alision.app/Alision";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alision/Alision-Prefix.pch";
+				INFOPLIST_FILE = "AlisionTests/AlisionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		772C49C719A667E8009B7534 /* Build configuration list for PBXProject "Alision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772C49FC19A667E8009B7534 /* Debug */,
+				772C49FD19A667E8009B7534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772C49FE19A667E8009B7534 /* Build configuration list for PBXNativeTarget "Alision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772C49FF19A667E8009B7534 /* Debug */,
+				772C4A0019A667E8009B7534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		772C4A0119A667E8009B7534 /* Build configuration list for PBXNativeTarget "AlisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772C4A0219A667E8009B7534 /* Debug */,
+				772C4A0319A667E8009B7534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 772C49C419A667E8009B7534 /* Project object */;
+}
