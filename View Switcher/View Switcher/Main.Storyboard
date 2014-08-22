@@ -4,19 +4,36 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Switch Controller-->
+        <!--Switch View Controller-->
         <scene sceneID="Mv3-ry-YUx">
             <objects>
-                <viewController id="MlZ-am-gE6" customClass="BIDViewSwitchController" sceneMemberID="viewController">
+                <viewController id="MlZ-am-gE6" customClass="BIDSwitchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H0s-94-z0n"/>
                         <viewControllerLayoutGuide type="bottom" id="6Cp-8M-vOK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GmK-B1-v8m">
+                    <view key="view" contentMode="scaleToFill" id="GmK-B1-v8m" customClass="BIDSwitchViewContoller">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-ti-bV7">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch Views" id="WGb-dF-6M5">
+                                        <connections>
+                                            <action selector="switchViews:" destination="MlZ-am-gE6" id="BtM-Ch-5y1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Qk3-ti-bV7" secondAttribute="bottom" id="6zs-bc-hMG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dd1-jt-ZW2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RA2-9z-j7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
