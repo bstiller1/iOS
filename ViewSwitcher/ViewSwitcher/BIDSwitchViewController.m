@@ -31,10 +31,10 @@
 
 - (void)viewDidLoad
 {
-    /*[super viewDidLoad];
+    [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.blueViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
-    [self.view insertSubview:self.blueViewController.view atIndex:0]; */
+    [self.view insertSubview:self.blueViewController.view atIndex:0]; 
 }
 
 - (void)didReceiveMemoryWarning

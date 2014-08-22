@@ -38,6 +38,37 @@
             </objects>
             <point key="canvasLocation" x="226" y="-109"/>
         </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="1YQ-7Q-Abs">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="0lF-xu-MbD" customClass="BIDBlueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UE6-EV-d97"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWq-xY-cWd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nV2-Jh-Cih">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmF-Pb-EHo">
+                                <rect key="frame" x="128" y="269" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60243846450000005" green="0.76041493790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="QmF-Pb-EHo" secondAttribute="centerX" id="FWB-8r-8JH"/>
+                            <constraint firstAttribute="centerY" secondItem="QmF-Pb-EHo" secondAttribute="centerY" id="Xdb-5C-zPP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="945-qn-t9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="-113"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
