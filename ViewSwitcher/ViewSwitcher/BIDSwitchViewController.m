@@ -61,19 +61,26 @@
 
 - (IBAction)switchViews:(id)sender
 {
+    [UIView beginAnimations:@"View Flip" context:NULL];
+    [UIView setAnimationDuration:0.4];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     if (!self.yellowViewController.view.superview){
         if (!self.yellowViewController){
             self.yellowViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Yellow"];
+        }
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
             [self.blueViewController.view removeFromSuperview];
             [self.view insertSubview:self.yellowViewController.view atIndex:0];
         } else {
             if (!self.blueViewController) {
                 self.blueViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
             }
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
             [self.yellowViewController.view removeFromSuperview];
             [self.view insertSubview:self.blueViewController.view atIndex:0];
         }
+    [UIView commitAnimations];
     }
-}
+
 
 @end

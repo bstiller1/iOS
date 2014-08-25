@@ -54,8 +54,12 @@
                                 <rect key="frame" x="128" y="269" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Press Me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="blueButtonPressed" destination="0lF-xu-MbD" eventType="touchUpInside" id="FbI-sb-Wun"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60243846450000005" green="0.76041493790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,6 +72,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="945-qn-t9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="606" y="-113"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="esu-2Q-fOu">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="HI8-Lm-h8I" customClass="BIDYellowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fxo-xW-n1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="S3S-0X-crq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nk9-Yh-ihF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFt-cV-Zx6">
+                                <rect key="frame" x="128" y="269" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" red="0.023529414087533951" green="0.011764707043766975" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowButtonPressed" destination="HI8-Lm-h8I" eventType="touchUpInside" id="CP2-fq-HRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.992298974" green="1" blue="0.22055831519999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PFt-cV-Zx6" secondAttribute="centerX" id="LXh-Se-C2g"/>
+                            <constraint firstAttribute="centerY" secondItem="PFt-cV-Zx6" secondAttribute="centerY" id="tYf-c7-6nO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lhf-Or-dRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="-112"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
