@@ -10,4 +10,6 @@
 
 @interface BIDDependantComponentPickerViewController : UIViewController
 
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
 @end

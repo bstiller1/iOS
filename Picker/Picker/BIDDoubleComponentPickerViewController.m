@@ -31,6 +31,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.fillingTypes = @[@"Ham", @"Turkey", @"Peanut Butter", @"Tuna Salad", @"Chicken Salad", @"Roast Beef", @"Vegemite"];
+    self.breadTypes = @[@"White", @"Whole Wheat", @"Rye", @"Sourdough", @"Seven Grain"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,7 +68,36 @@
                                                   delegate:nil
                                       cancelButtonTitle:@"Great!"
                                          otherButtonTitles:nil];
+    [alert show];
 }
 
+#pragma mark - 
+#pragma mark Picker Data Source Methods
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 2;
+}
 
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    if (component == kBreadComponent) {
+        return [self.breadTypes count];
+    } else {
+        return [self.fillingTypes count];
+    }
+}
+
+#pragma mark Picker Delegate Methods
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    if (component == kBreadComponent)
+    {
+        return self.breadTypes[row];
+    } else {
+        return self.fillingTypes[row];
+    }
+}
 @end

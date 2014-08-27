@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Picker/BIDDoubleComponentPickerViewController.m"
-            timestampString = "430779562.583336"
+            timestampString = "430861301.394289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-buttonPressed:"
             landmarkType = "5">
          </BreakpointContent>

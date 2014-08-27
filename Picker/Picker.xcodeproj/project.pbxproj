@@ -24,6 +24,7 @@
 		771171F119ACF85100F9BAB9 /* BIDDoubleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771171F019ACF85100F9BAB9 /* BIDDoubleComponentPickerViewController.m */; };
 		771171F419ACF87100F9BAB9 /* BIDDependantComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771171F319ACF87100F9BAB9 /* BIDDependantComponentPickerViewController.m */; };
 		771171F719ACF88800F9BAB9 /* BIDCustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771171F619ACF88800F9BAB9 /* BIDCustomPickerViewController.m */; };
+		777288DA19AE64E300AE60C6 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 777288D919AE64E300AE60C6 /* statedictionary.plist */; };
 		778DC61F19AD0E05004A9B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778DC61E19AD0E05004A9B6F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		771171F319ACF87100F9BAB9 /* BIDDependantComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDependantComponentPickerViewController.m; sourceTree = "<group>"; };
 		771171F519ACF88800F9BAB9 /* BIDCustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCustomPickerViewController.h; sourceTree = "<group>"; };
 		771171F619ACF88800F9BAB9 /* BIDCustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCustomPickerViewController.m; sourceTree = "<group>"; };
+		777288D919AE64E300AE60C6 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		778DC61E19AD0E05004A9B6F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 		771171C119ACF7B500F9BAB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				777288D919AE64E300AE60C6 /* statedictionary.plist */,
 				771171C219ACF7B500F9BAB9 /* Picker-Info.plist */,
 				771171C319ACF7B500F9BAB9 /* InfoPlist.strings */,
 				771171C619ACF7B500F9BAB9 /* main.m */,
@@ -250,6 +253,7 @@
 			files = (
 				778DC61F19AD0E05004A9B6F /* Main.storyboard in Resources */,
 				771171C519ACF7B500F9BAB9 /* InfoPlist.strings in Resources */,
+				777288DA19AE64E300AE60C6 /* statedictionary.plist in Resources */,
 				771171CD19ACF7B500F9BAB9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
