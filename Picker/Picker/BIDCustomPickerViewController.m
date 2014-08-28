@@ -7,17 +7,43 @@
 //
 
 #import "BIDCustomPickerViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface BIDCustomPickerViewController ()
+@property (strong, nonatomic) NSArray *images;
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UILabel *winLabel;
-- (IBAction)spin:(id)sender;
-
-@property (strong, nonatomic) NSArray *images;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
 @implementation BIDCustomPickerViewController
+{
+    SystemSoundID winSoundID;
+    SystemSoundID crunchSoundID;
+}
+
+-(void)showButton
+{
+    self.button.hidden = NO;
+}
+
+- (void)playWinSound
+{
+    if (winSoundID == 0){
+        NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"win"
+                                                  withExtension:@"wav"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &winSoundID);
+       }
+    AudioServicesPlaySystemSound(winSoundID);
+    
+        self.winLabel.text = @"WINNING!";
+        [self performSelector:@selector(showButton)
+                   withObject:nil
+                   afterDelay:1.5];
+        
+    }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -78,16 +104,36 @@
             win = YES;
         }
     }
-    if (win) {
-        self.winLabel.text = @"WIN!";
+    
+    if(crunchSoundID == 0) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch"
+                                                         ofType:@"wav"];
+        NSURL *soundURL = [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL,                                         &crunchSoundID);
+            }
+    AudioServicesPlaySystemSound(crunchSoundID);
+    
+    if(win) {
+        [self performSelector:@selector(playWinSound)
+                   withObject:nil
+                   afterDelay: .5];
     } else {
-        self.winLabel.text = @"";
+        [self performSelector:@selector(showButton)
+                   withObject:nil
+                   afterDelay:.5];
     }
+    self.button.hidden = YES;
+    self.winLabel.text = @"";
+//    if (win)  {
+//        self.winLabel.text = @"WIN!";
+//    } else {
+//        self.winLabel.text = @"";
+//    }
 }
 
 #pragma mark -
 #pragma mark Picker Data Source Methods
-- (NSInteger)numberOFcomponentsInPickerView:(UIPickerView *)pickerView
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return 5;
 }
@@ -97,6 +143,7 @@ numberOfRowsInComponent:(NSInteger)component
 {
     return [self.images count];
 }
+
 #pragma mark Picker Delegate Methods
 - (UIView *)pickerView:(UIPickerView *)pickerView
             viewForRow:(NSInteger)row

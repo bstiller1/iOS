@@ -246,7 +246,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-Se-oYT">
-                                <rect key="frame" x="139" y="210" width="42" height="21"/>
+                                <rect key="frame" x="42" y="170" width="236" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -257,6 +257,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="Kp9-5Z-4KR"/>
                     <connections>
+                        <outlet property="button" destination="UkY-JF-GhV" id="ful-TY-4MT"/>
                         <outlet property="picker" destination="mcF-bh-ut4" id="kmM-iW-86L"/>
                         <outlet property="winLabel" destination="IQj-Se-oYT" id="1K4-q6-KsZ"/>
                     </connections>

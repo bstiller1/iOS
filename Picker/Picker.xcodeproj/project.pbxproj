@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770E9EB119AFB92C00532489 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 770E9EAF19AFB92C00532489 /* crunch.wav */; };
+		770E9EB219AFB92C00532489 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 770E9EB019AFB92C00532489 /* win.wav */; };
 		771171BB19ACF7B500F9BAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771171BA19ACF7B500F9BAB9 /* Foundation.framework */; };
 		771171BD19ACF7B500F9BAB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771171BC19ACF7B500F9BAB9 /* CoreGraphics.framework */; };
 		771171BF19ACF7B500F9BAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771171BE19ACF7B500F9BAB9 /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		770E9EAF19AFB92C00532489 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		770E9EB019AFB92C00532489 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		771171B719ACF7B500F9BAB9 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771171BA19ACF7B500F9BAB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		771171BC19ACF7B500F9BAB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +130,8 @@
 		771171C019ACF7B500F9BAB9 /* Picker */ = {
 			isa = PBXGroup;
 			children = (
+				770E9EAF19AFB92C00532489 /* crunch.wav */,
+				770E9EB019AFB92C00532489 /* win.wav */,
 				771171C919ACF7B500F9BAB9 /* BIDAppDelegate.h */,
 				771171CA19ACF7B500F9BAB9 /* BIDAppDelegate.m */,
 				771171CC19ACF7B500F9BAB9 /* Images.xcassets */,
@@ -251,8 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770E9EB119AFB92C00532489 /* crunch.wav in Resources */,
 				778DC61F19AD0E05004A9B6F /* Main.storyboard in Resources */,
 				771171C519ACF7B500F9BAB9 /* InfoPlist.strings in Resources */,
+				770E9EB219AFB92C00532489 /* win.wav in Resources */,
 				777288DA19AE64E300AE60C6 /* statedictionary.plist in Resources */,
 				771171CD19ACF7B500F9BAB9 /* Images.xcassets in Resources */,
 			);
